@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 5;
-    float acceleration = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -19,11 +18,15 @@ public class PlayerController : MonoBehaviour {
 
     void Movement()
     {
-        float posX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float posZ = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        float posX = Input.GetAxis("Horizontal");
+        float posZ = Input.GetAxis("Vertical");
 
-         Vector3 move = new Vector3(transform.position.x + posX, transform.position.y, transform.position.z + posZ);
-        //move = move.normalized;
-        transform.position = move;
+        Vector3 move = new Vector3(posX, 0, posZ);
+        if (move.magnitude > 1)
+            move = move.normalized;
+
+        move = move * speed * Time.deltaTime;
+
+        transform.position = transform.position + move;
     }
 }
