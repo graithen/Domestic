@@ -66,7 +66,7 @@ Transform:
   m_GameObject: {fileID: 1462437724946762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.61, y: 1.5, z: 0.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 1, z: 1}
   m_Children:
   - {fileID: 4052859011503762}
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.0151863}
+  m_Size: {x: 1, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0.08459854}
 --- !u!65 &65547756714665952
 BoxCollider:
@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.0151863}
+  m_Size: {x: 1, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0.08459854}
 --- !u!114 &114181057388461710
 MonoBehaviour:
@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportToObject: {fileID: 0}
   teleportSubject: {fileID: 0}
+  roomCam: {fileID: 0}
   playerExitTeleporter: 0
   enemyExitTeleporter: 0
 --- !u!114 &114639272035552428
@@ -124,5 +125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportToObject: {fileID: 0}
   teleportSubject: {fileID: 0}
+  roomCam: {fileID: 0}
   playerExitTeleporter: 0
   enemyExitTeleporter: 0

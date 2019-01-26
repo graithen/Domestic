@@ -17,7 +17,7 @@ public class FatherController : MonoBehaviour {
         agent.SetDestination(target.transform.position);
     }
 
-    /*public void DisableCollider()
+    public void DisableCollider()
     {
         StartCoroutine(disableCollider());
     }
@@ -25,7 +25,7 @@ public class FatherController : MonoBehaviour {
     IEnumerator disableCollider()
     {
         gameObject.GetComponent<CapsuleCollider>().enabled = false;
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         gameObject.GetComponent<CapsuleCollider>().enabled = true;
-    }*/
+    }
 }
