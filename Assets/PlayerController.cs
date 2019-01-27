@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public float speed = 5;
+    public bool isHidden;
+    public GameObject stealthIndicator;
+    public GameObject spawnLocation;
+    public GameObject startingCam;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +18,21 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Movement();
-	}
+
+        if (isHidden)
+            stealthIndicator.SetActive(true);
+        if (!isHidden)
+            stealthIndicator.SetActive(false);
+
+    }
+
+    public void reset()
+    {
+        gameObject.transform.position = spawnLocation.transform.position;
+        GameObject.FindGameObjectWithTag("MainCamera").SetActive(false);
+        startingCam.SetActive(true);
+        startingCam.tag = "MainCamera";
+    }
 
     void Movement()
     {
