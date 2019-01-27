@@ -10,6 +10,7 @@ public class GenericObject : MonoBehaviour
     public bool phoneBook;
     public bool key;
     public GameObject studyDoor;
+    public GameObject studyLock;
     public GameObject studyTeleporter;
     public GameObject mainCamera;
 
@@ -42,6 +43,7 @@ public class GenericObject : MonoBehaviour
             {
                 controller.key = true;
                 studyDoor.SetActive(false);
+                studyLock.SetActive(false);
                 studyTeleporter.SetActive(true);
                 Destroy(gameObject);
             }
