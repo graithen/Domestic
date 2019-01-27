@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 8738fe8ce3a06c34baa8d30097074826
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.023
+    100002: Cube.026
+    100004: Cube.034
+    100006: Cube.036
+    100008: Cube.059
+    100010: Cube.085
+    100012: Cube.086
+    100014: dvdplayer
+    100016: group1
+    100018: group3_pCylinder1
+    100020: group3_pCylinder2
+    100022: //RootNode
+    100024: pCube1.002
+    100026: Plane.004
+    100028: shelf.001
+    100030: sofa1
+    100032: tv
+    400000: Cube.023
+    400002: Cube.026
+    400004: Cube.034
+    400006: Cube.036
+    400008: Cube.059
+    400010: Cube.085
+    400012: Cube.086
+    400014: dvdplayer
+    400016: group1
+    400018: group3_pCylinder1
+    400020: group3_pCylinder2
+    400022: //RootNode
+    400024: pCube1.002
+    400026: Plane.004
+    400028: shelf.001
+    400030: sofa1
+    400032: tv
+    2100000: No Name
+    2100002: lambert1.002
+    2100004: lambert1.007
+    2100006: lambert1.008
+    2300000: Cube.023
+    2300002: Cube.026
+    2300004: Cube.034
+    2300006: Cube.036
+    2300008: Cube.059
+    2300010: Cube.085
+    2300012: Cube.086
+    2300014: dvdplayer
+    2300016: group3_pCylinder1
+    2300018: group3_pCylinder2
+    2300020: pCube1.002
+    2300022: Plane.004
+    2300024: shelf.001
+    2300026: sofa1
+    2300028: tv
+    3300000: Cube.023
+    3300002: Cube.026
+    3300004: Cube.034
+    3300006: Cube.036
+    3300008: Cube.059
+    3300010: Cube.085
+    3300012: Cube.086
+    3300014: dvdplayer
+    3300016: group3_pCylinder1
+    3300018: group3_pCylinder2
+    3300020: pCube1.002
+    3300022: Plane.004
+    3300024: shelf.001
+    3300026: sofa1
+    3300028: tv
+    4300000: Cube.085
+    4300002: Cube.086
+    4300004: Cube.023
+    4300006: Cube.026
+    4300008: Plane.004
+    4300010: Cube.034
+    4300012: Cube.036
+    4300014: Cube.059
+    4300016: group3_pCylinder2
+    4300018: sofa1
+    4300020: group3_pCylinder1
+    4300022: tv
+    4300024: shelf.001
+    4300026: dvdplayer
+    4300028: pCube1.002
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
