@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class GenericObject : MonoBehaviour
 {
+    PlayerController controller;
     bool interactOpen;
+
+    public bool phoneBook;
+    public bool key;
+    public GameObject studyDoor;
+    public GameObject studyTeleporter;
+    public GameObject mainCamera;
 
     // Use this for initialization
     void Start()
@@ -24,8 +31,25 @@ public class GenericObject : MonoBehaviour
     private void Interact ()
     {
         if (Input.GetKey(KeyCode.E))
+        {
             //Object interaction code:
-            Destroy(gameObject);
+            if (phoneBook && !controller.phoneBook)
+            {
+                controller.phoneBook = true;
+                Destroy(gameObject);
+            }
+            if (key && controller != null && !controller.key)
+            {
+                controller.key = true;
+                studyDoor.SetActive(false);
+                studyTeleporter.SetActive(true);
+                Destroy(gameObject);
+            }
+            if (!phoneBook && !key && controller.phoneBook)
+            {
+                mainCamera.GetComponent<Ending>().activateEnd = true;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,6 +57,7 @@ public class GenericObject : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Player entered");
+            controller = other.GetComponent<PlayerController>();
             interactOpen = true;
         }
     }

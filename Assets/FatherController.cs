@@ -21,6 +21,7 @@ public class FatherController : MonoBehaviour {
         patrols[2] = patrolThree;
         currentPatrol = Mathf.RoundToInt(Random.Range(-0.5f, 2.49f));
         target = patrols[currentPatrol][currentRoom];
+        StartCoroutine(waitAtStart());
     }
 
     // Update is called once per frame
@@ -62,6 +63,12 @@ public class FatherController : MonoBehaviour {
         StartCoroutine(resetGameWait());
     }
 
+    IEnumerator waitAtStart()
+    {
+        yield return new WaitForSeconds(8.0f);
+        gameObject.transform.position = spawnLocation.transform.position;
+    }
+
     IEnumerator disableCollider()
     {
         gameObject.GetComponent<CapsuleCollider>().enabled = false;
@@ -81,18 +88,23 @@ public class FatherController : MonoBehaviour {
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         gameObject.transform.position = new Vector3(player.transform.position.x, 0, player.transform.position.z + 1.0f);
         player.GetComponent<PlayerController>().enabled = false;
+        gameObject.GetComponent<aiAnimatorController>().anim.SetBool("isBeat", true);
+        player.GetComponent<PlayerController>().anim.SetBool("isWalking", false);
         DisableCollider();
         ResetGame();
     }
 
     void resetGame()
     {
+        gameObject.GetComponent<aiAnimatorController>().anim.SetBool("isBeat", false);
+        player.GetComponent<PlayerController>().anim.SetBool("isWalking", true);
         gameObject.transform.position = spawnLocation.transform.position;
         currentRoom = 0;
         currentPatrol = Mathf.RoundToInt(Random.Range(-0.5f, 2.49f));
         target = patrols[currentPatrol][currentRoom];
         player.GetComponent<PlayerController>().enabled = true;
         player.GetComponent<PlayerController>().reset();
+        waitAtStart();
     }
 
     void playerCheck(GameObject player)
